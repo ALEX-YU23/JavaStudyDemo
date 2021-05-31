@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		
+		
+		<script type="text/javascript">
+			
+			//循环结构
+			/* 
+			 for(初始化变量;设置循环结束的条件;更新变量值){
+				 
+				 //需要循环执行的代码
+			 }
+			 初始化变量 ：定义一个计数器  只会执行一次
+			 设置循环结束的条件  要设置循环什么时候结束
+			 更新变量值  改变计数器的值
+			 
+			 
+			 for循环的执行顺序
+			 
+			 
+			 */
+			
+			// 
+			// for (var i = 0; i < 10 ; i++) {
+			// 	console.log('hello javascript');
+			// }
+			
+			//100以内的偶数   
+			
+			for (var i = 1; i <100; i++) {
+				if(i%2==0){
+					console.log(i);
+				}	
+			}
+			// 
+			//1-100数字的和
+			// var sum = 0;
+			// for (var i = 1; i <=100; i++) {
+			// 	sum+=i;
+			// }
+			// console.log(sum);
+			
+			// 1+2+3+4+......  +n   和刚好大于2000  大于2000的最小数
+			
+			var sum = 0;
+			var i = 1;
+			while(sum<2000){
+				
+				sum+=i;
+				i++; //改变计数器的值
+			}
+			console.log(sum);
+			console.log(i-1);
+			
+			
+			//用户密码的登录判定
+			var count = 0;
+			do{
+				var pwd = prompt('请输入密码')
+				count++;
+				if((3-count)==0 || pwd=='123456'){
+					
+				}else{
+					alert('您还有'+(3-count)+'次机会')
+				}
+				
+			}while (pwd!='123456'&&count<=2)
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>相册-乱</title>
+		<style type="text/css">
+			*{
+				margin: 0;padding: 0;
+			}
+			body{
+				background-color: cornflowerblue;
+			}
+			.photo{
+				position: relative;
+				width: 1226px;
+				height: 600px;
+				margin: 0 auto;
+			}
+			.content{
+				
+				list-style: none;
+				width: 726px;
+				height: 600px;
+			}
+			.content img{
+				border: 2px solid #fff;
+				width: 231.6px;
+				height: 146.4px;
+			}
+			.content>li{
+				position: absolute;
+				transition: transform 0.7s;
+			}
+			.content>li:nth-child(1){
+				left: 353px;
+				top: 45px;
+				transform: rotate(26deg);
+				/* transform: translate(120px,30px); */
+			}
+			.content>li:nth-child(2){
+				left: 233px;
+				top: 145px;
+				transform: rotate(16deg);
+				/* transform: translate(120px,30px); */
+			}
+			.content>li:nth-child(3){
+				left: 553px;
+				top: 365px;
+				transform: rotate(45deg);
+				/* transform: translate(120px,30px); */
+			}
+			.content>li:nth-child(4){
+				left: 353px;
+				top: 353px;
+				transform: rotate(73deg);
+				/* transform: translate(120px,30px); */
+			}
+			.content>li:nth-child(5){
+				left: 612px;
+				top: 475px;
+				transform: rotate(456deg);
+				/* transform: translate(120px,30px); */
+			}
+			.content>li:nth-child(6){
+				left: 453px;
+				top: 545px;
+				transform: rotate(36deg);
+				/* transform: translate(120px,30px); */
+			}
+			.content>li:nth-child(7){
+				left: 454px;
+				top: 143px;
+				transform: rotate(-58deg);
+				/* transform: translate(120px,30px); */
+			}
+			.content>li:hover{
+				transform: rotate(0deg);
+				z-index: 9999;
+				transform: scale(1.7);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="photo">
+			<ul class="content">
+				<li><img src="../img/ia_100000005.jpg" alt=""></li>
+				<li><img src="../img/ia_100000015.jpg" alt=""></li>
+				<li><img src="../img/ia_100000009.jpg" alt=""></li>
+				<li><img src="../img/ia_100000007.jpg" alt=""></li>
+				<li><img src="../img/ia_100000010.jpg" alt=""></li>
+				<li><img src="../img/ia_100000008.jpg" alt=""></li>
+				<li><img src="../img/ia_100000012.jpg" alt=""></li>
+			</ul>
+		</div>
+	</body>
+</html>

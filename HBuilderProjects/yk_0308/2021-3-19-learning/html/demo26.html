@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- 2.实现9*9乘法表 
+		
+			1*1=1
+			1*2=2 2*2=4
+			1*3=3 2*3=6 3*3=9
+			..................................
+											9*9=81
+		
+		
+		-->
+		<script type="text/javascript">
+			
+			//外层循环控制打印的行数
+			for (var i = 1; i < 10; i++) {
+				//每一行打印的次数
+				var str = '';  
+				for (var j = 1; j<=i ; j++) {
+					str+=j+'*'+i+'='+(j*i)+'\t'
+				}
+				console.log(str);
+			}
+			
+			
+		</script>
+	</body>
+</html>

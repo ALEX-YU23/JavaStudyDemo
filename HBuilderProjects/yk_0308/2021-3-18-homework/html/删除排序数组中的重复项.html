@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>删除排序数组中的重复项</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			nums = [1,1,2,5,5,5,5,6,7,7,7,7,9,9,9,9,10,10]
+			// for(var i=0;i<nums.length;i++){
+			// 	if(nums[i]==nums[i+1]){
+			// 		console.log(i);
+			// 		nums.splice(i,1);
+			// 		i--;
+			// 	}
+			// }
+			// nums.splice(0,1)
+			
+			var removeDuplicates = function(nums) {
+				for(var i=0;i<nums.length;i++){
+					if(nums[i]==nums[i+1]){
+						nums.splice(i,1);
+						i--;
+					}
+				}
+				return nums;
+			};
+			var a;
+			
+			a= removeDuplicates(nums)
+			
+			
+			
+			
+			console.log(a);
+		</script>
+	</body>
+</html>

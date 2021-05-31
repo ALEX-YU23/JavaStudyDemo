@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>js改变html属性</title>
+		<script type="text/javascript">
+			
+		</script>
+	</head>
+	<body>
+		<p>
+			javascript改变img的scr属性
+		</p>
+		<button onclick="document.getElementById('myImage').src='../eg_bulbon.gif'">
+			开灯
+		</button>
+		<img id="myImage" src="../eg_bulboff.gif">
+		<button type="button" onclick="document.getElementById('myImage').src='../eg_bulboff.gif'">
+			关灯
+		</button>
+		
+		<p id="demo2">
+			javascript改变p的样式
+		</p>
+		<button type="button" onclick="document.getElementById('demo2').style.fontSize='25px'">改变p的样式</button>
+		<button type="button" onclick="document.getElementById('demo2').style.display='block'">显示</button>
+		<button type="button" onclick="document.getElementById('demo2').style.display='none'">隐藏</button>
+		<!-- <button onclick="document.getElementById('myImage').src='../eg_bulbon.gif'">开灯</button>
+		
+		<img id="myImage" border="0" src="../eg_bulboff.gif" style="text-align:center;">
+		
+		<button onclick="document.getElementById('myImage').src='../eg_bulboff.gif'">关灯</button> -->
+
+	</body>
+</html>

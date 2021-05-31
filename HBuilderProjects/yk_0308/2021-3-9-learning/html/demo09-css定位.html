@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>css定位</title>
+		<style type="text/css">
+			.box{
+				width: 100px;
+				height: 100px;
+				background-color: #FF0000;
+				margin-top: 10px;
+			}
+			#box-1{
+				position: relative;
+				left: 100px;
+			}
+			
+			#box-2:hover{
+				position: relative;
+				left: 5px;
+				bottom: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- css定位
+		 1.相对定位
+			参考点：自身
+			是否脱离文档流：否  
+			开启方式：  position：relative
+		 2.绝对定位
+			参考点：以含有position属性的父元素为参考点
+			是否脱离文档流：是
+			开启方式：  position：absolute
+		 3.固定定位
+			参考点：当前窗口的左上角
+			是否脱离文档流：是
+			开启方式：  position：fixed
+		 
+		 4.静态定位
+		 -->
+		<div class="box" id="box-1"></div>
+		<div class="box" id="box-2"></div>
+		
+		
+	</body>
+</html>

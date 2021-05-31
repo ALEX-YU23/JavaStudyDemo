@@ -1,0 +1,47 @@
+package org.jgs.collection.day04;
+
+import java.util.ArrayList;
+
+import org.jgs.collection.day01.Point;
+import org.junit.Test;
+
+/*
+ * 泛型得到使用
+ * 1.集合
+ */
+public class TDemo01 {
+	@Test
+	public void test01() {
+		
+		ArrayList list = new ArrayList();
+		//没有使用泛型可以添加任何引用类型的数据
+		list.add(1);
+		list.add("lisi");
+		list.add(new Point());
+		
+		for (Object obj : list) {
+			String str = (String)obj;//java.lang.ClassCastException
+		}
+
+	}
+	
+	@Test
+	public void test02() {//使用泛型 限制集合中存储元素的类型
+		
+		ArrayList<String> list = new ArrayList<>();
+		
+		list.add("1");
+		list.add("2");
+		list.add("3");
+		list.add("4");
+		
+		for (String str : list) {
+			System.out.println(str);
+		}
+		
+		
+		
+	}
+	
+
+}

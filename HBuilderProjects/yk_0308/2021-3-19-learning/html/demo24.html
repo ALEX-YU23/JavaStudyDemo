@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<script type="text/javascript">
+			var a = prompt('请输入第一个参数a')
+			var b = prompt('请输入第二个参数b')
+			var c = prompt('请输入第三个参数c')
+			
+			//delt
+			var delt =b*b - 4*a*c
+			var res = Math.sqrt(delt)
+			
+			//判断方程的解
+			if(delt>0){
+				console.log('方程有两个不同的实根');
+				var x1 = (-b+res)/(2*a)
+				var x2 = (-b-res)/(2*a)
+				console.log('x1='+x1+' x2='+x2);
+			}else if(delt==0){
+				console.log('方程有两个相同的实根');
+				var x1 = (-b)/(2*a)
+				console.log('x1=x2='+x1);
+			}else{
+				console.log('方程没有实根');
+			}
+				
+		
+				
+				
+			
+			
+			
+			
+			
+			
+		</script>
+	</body>
+</html>

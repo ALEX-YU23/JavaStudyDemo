@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>运算符</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			var n1 =3;
+			var n2 =2;
+			
+			
+			//+
+			// var temp = n1 +n2;
+			// var temp = n1/n2;
+			var temp = n1%n2 
+			console.log(temp);  //3  -1  2  0.5  1
+			
+			/*
+				++ --  自增 自减  如果没有参与到运算中 ++ -- 写在变量前面和后面是没有区别的
+				参与运算  ++ 和 -- 在变量前面 表示先自增或者自减1 然后在参与运算 
+				
+						++ 和 -- 在变量后面  表示先参与运算，然后在自增或者自减1 
+			*/ 
+			//n1++;
+			//n1--;
+			//--n1;
+			// console.log(++n1);
+			// console.log(n1);
+			//console.log(n1++);
+			// console.log((n1++)+n1);//3
+			// n1+=2; //n1= n1+2
+			// console.log(n1);
+			
+			//比较运算符  == === > < >= <=  返回布尔类型值  true  false
+			
+			// var b = n1 === n2  ;
+			//  console.log(b);
+			
+		var result= n1>n2 ? 'n1>n2':'n1<n2';
+		console.log(result);
+		
+		var b1 = true;
+		var b2 =false;
+		// console.log(b1&&b2);
+		// console.log(b1||b2);
+		console.log(!b1);
+		</script>
+		
+		
+		
+	</body>
+</html>

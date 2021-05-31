@@ -1,0 +1,165 @@
+1.从键盘输入某个十进制整数，转换成对应的二进制并输出
+public class cs1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			Scanner scanner = new Scanner(System.in);
+			System.out.println("请输入要转化的正整数：");
+			int a = scanner.nextInt();
+			String b = Integer.toBinaryString(a);
+		    int c = Integer.parseInt(b);
+		    System.out.println("二进制是"+b);
+
+		
+		
+	}
+
+}
+
+2.给20块钱买可乐，每瓶可乐3块钱，喝完之后退瓶子可以换回1块钱，
+问最多可以喝到多少瓶可乐
+public class ce2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     int money=20;
+     int cl=3;
+     int bottle=0;
+     int sum=0;
+     while(money>cl) {
+    	 bottle=money/cl;
+    	 money=bottle+money%cl;
+    	 sum+=bottle;
+     }
+     System.out.println("一共可乐是"+sum);
+	}
+
+}
+3.用while循环或其他循环输出1-1000之间能被5整除的数，且每行输出5个
+public class cs3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      for(int i=1;i<=1000;i++) {
+    	if(i%5==0) {
+    		System.out.print(" "+i);
+    	}
+    	  if (i % 25 == 0) {
+              System.out.println();
+              }  
+      }
+      }
+		
+}
+4.从键盘输入三角形的三边长
+(1）判断这三边是否能够构成三角形
+(2）如果是等腰三角形，请说明是等腰三角形
+(3）如果是等边三角形，请说明是等边三角形
+public class cs4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+        System.out.println("请输入边");
+        double xl=scan.nextDouble();
+        System.out.println("请输入边");
+        double yl=scan.nextDouble();
+        System.out.println("请输入边");
+        double zl=scan.nextDouble();
+		         
+				if((xl+yl>zl)&&(xl+zl>yl)&&(yl+zl>zl)){
+		            System.out.println("能构成三角形");
+		        }else{
+		            System.out.println("不能构成三角形");
+		        }
+    if(xl==yl||yl==zl||zl==xl) {
+    	System.out.println("dengyao");
+    }else {
+    	System.out.println("bushi");
+    }
+    if(xl==yl&&yl==zl&&xl==zl) {
+    	System.out.println("dengyao");
+    }else {
+    	System.out.println("bushi");
+    }
+    
+   
+        	 
+     }
+	}
+5.要求用100元买100只鸡，其中公鸡五元一只，母鸡三元一只，
+小鸡1元三只，规定每种至少买一只，求购买方案
+public class cs5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a,b,c;
+		for(a=1;a<100;a++) {
+                                for(b=1;b<100;b++) {
+		for(c=1;c<100;c++) {
+		if(c%3==0){
+		if(a+b+c==100&&5*a+3*b+c/3==100) {
+System.out.println("公鸡是"+a);
+System.out.println("母鸡是"+b);
+System.out.println("小鸡是"+c);
+	break;}}}}}}
+
+6.给定任意两个正整数，求一下他们的最大公约数和最小公倍数
+7.有一个乞丐姓洪，去天桥要钱第一天要了1块钱第二天要了2块钱第三天要了4块钱
+第四天要了8块钱
+public class ce7 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    	int money=0;
+    	int sum=0;
+    	for(int i=1;i<=10;i++) {
+    	if(0==money)
+    		money=1;
+    	else money*=2;
+    		sum+=money;
+    		 System.out.println(i+" 天"+money+"元");
+    		 System.out.println(i+" 天公共获得"+sum);
+    	}
+    	
+	}
+	
+
+}
+
+8.编写一个程序，求出200到300之间的数，且满足条件：它们三个数字之积为42，三个数字之和为 12
+public class cs8 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     for(int i=200;i<=300;i++) {
+    	 int gw = i%10;
+		  int sw = (i/10)%10;
+			int bw = i/100;
+			if(gw*sw*bw==42&&gw+sw+bw==12){
+				
+				System.out.println("这个数是"+i);
+			}
+     }
+     }
+
+}
+
+9.要求用户输入一个年份和一个月份，判断（要求使用嵌套的if…else和switch分别判断一次）该年该月有多少天。
+10.使用循环求式子2+22+222+2222+22222的和
+public class cs10 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		   int a=0,sum=0;
+           for(int n=1;n<=5;n++)
+         {
+             a=(a*10)+2;
+             sum+=a;
+         }
+           System.out.print("sum="+sum);
+     	
+	}
+
+}
+

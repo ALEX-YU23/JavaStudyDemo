@@ -1,0 +1,36 @@
+package org.jgs.collection.day01;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+/*
+ * 集合框架  List
+ * ArrayList
+ * 创建ArrayList集合对象
+ * 1.构造方法：
+ * 	1.1 ArrayList() 构造一个初始容量为 10 的空列表 jdk1.8之后 初始容量为0 只有在添加第一个元素的时候 容量才会变成10
+ * 	1.2 ArrayList(int initialCapacity)   构造一个具有指定初始容量的空列表
+ * 
+ * 2.常用方法
+ * 	2.1 添加元素boolean add(E e)  将指定的元素添加到此列表的尾部
+ */
+
+public class CollectionDemo01 {
+	
+	public static void main(String[] args) {
+		//调用无参构造器 创建集合对象
+		ArrayList  list =  new ArrayList();   //0
+        //ArrayList  list =  new ArrayList(20);
+		
+	  // 使用集合的常用方法 添加元素
+		list.add("张三");
+		list.add("李四");
+		//添加任何对象类型的数据到集合中
+		//list.add(20);
+		
+		
+		
+	}
+	
+
+}

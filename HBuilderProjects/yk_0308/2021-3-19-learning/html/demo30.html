@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- 存储一个班级学生成绩  100 -->
+		<script type="text/javascript">
+			
+			// var score1 = 30
+			// var score2 = 30
+			// var score3 = 30
+			// var score4 = 30
+			
+			//创建数组的第一种方式 new Array()
+			var array = new Array();
+			array[0]= 1;
+			array[1]= 2;
+			array[2]= 3;
+			array[3]= 4;
+			/* 
+			 创建数组的第二种方式
+			 var array = new Array(1,2,3,4);
+			 创建数组的第三种方式
+			 var array = [1,2,3,4];
+			 创建数组的第四种方式  参数代表数组的长度 但是不是数组的上限
+			 var array = new Array(5);
+			 
+			 
+			 */
+			//查看数组中的每一个元素
+			console.log(array.toString());
+			//查看指定位置的元素
+			console.log(array[1]);
+			//遍历数组  查看数组中的每一元素  for
+			for (var i = 0; i < 4; i++) {
+				console.log(array[i]);
+			}
+			console.log('---------------------------------');
+			//查看数组中元素的个数
+			var len = array.length
+			console.log(len);
+			
+			
+			/* 
+				添加元素到数组
+				1.追加  向数组最后添加元素
+				2.向数组最前面添加元素
+				3.添加元素到指定位置
+			 */
+			// 1.追加  向数组最后添加元素  返回值  新数组长度
+				var len = array.push(5)
+				console.log(array.toString());
+				console.log(len);
+			
+			// 2.向数组最前面添加元素   返回值  新数组长度
+				len = array.unshift(0)
+				console.log(array.toString());
+				console.log(len);
+			// 3.添加元素到指定位置
+				array.splice(1,0,10,20)
+				console.log(array.toString());
+				console.log('*********************************');
+			/*
+				1.删除数组最后元素
+				2.删除数组最前面元素
+				3.删除数组指定位置元素
+			*/
+		   // 1.删除数组最后元素  返回值 删除的元素
+			// var temp = array.pop()
+			var temp = array.shift()
+			console.log(array);
+			console.log(temp);
+			console.log('--------------------');
+			/*
+				3.删除数组指定位置元素
+				splice(star,delNum,insert)
+				1.指定开始删除的位置
+				2.指定删除的个数
+				3.插入的元素
+			只写一个参数：从指定位置开始删除 直到数组最后  以数组的形式返回删除的元素
+			两个参数：从指定位置开始删除 删除指定的个数
+			三个参数：从指定位置开始删除 删除指定的个数  从指定的位置开始插入元素（第三个参数）
+			*/
+			// tem = array.splice(1)
+			// tem = array.splice(1,2)
+			 tem = array.splice(1,2,10,20)
+			console.log(array.toString());
+			console.log(tem);
+			
+			//实现数组的反转
+			var a = [1,10,2,3,4,5]
+			console.log(a.reverse());
+			
+			//实现数组的排序  比值函数
+			console.log(a.sort(function(a,b){return b-a}));
+			
+			//实现数组的组合
+			var b = [7,8,9]
+			console.log(a.concat(b));
+			
+			
+			
+			
+			
+			
+			
+			
+		   
+			
+			
+			
+			
+			
+		</script>
+		
+		
+		
+	</body>
+</html>

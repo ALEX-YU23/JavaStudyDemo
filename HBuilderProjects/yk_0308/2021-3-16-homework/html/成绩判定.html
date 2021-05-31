@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>成绩判定</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var score = prompt('请输入你儿的分数：');
+			if(!isNaN(score)){
+				if(score>90&&score<=100){
+					console.log('优秀');
+				}else if(score>80){
+					console.log('良好');
+				}else if(score>70){
+					console.log('中');
+				}else if(score>=60){
+					console.log('还行');
+				}else if(score<60&&score>=0){
+					console.log('不及格');
+				}else{
+					console.log('请重新输入');
+				}
+			}
+		</script>
+	</body>
+</html>

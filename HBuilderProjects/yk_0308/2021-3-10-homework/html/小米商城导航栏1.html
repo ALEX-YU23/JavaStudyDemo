@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>导航栏一</title>
+		<link rel="stylesheet" href="../font_k7lc0gn7ww/iconfont.css">
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+			}
+			.header{
+				width: 1349px;
+				height: 140px;
+				/* border: 1px solid gold; */
+				box-sizing: border-box;
+			}
+			.header>.topbar{
+				position: relative;
+				height: 40px;
+				font-size: 12px;
+				color: #b0b0b0;
+				background-color: #333;
+			}
+			.container{
+				width: 1226px;
+				height: 40px;
+				margin: 0 auto;
+				/* background-color: #0077AA; */
+			}
+			.nav-topbar{
+				float: left;
+				height: 40px;
+				/* background-color: #55A532; */
+			}
+			.nav-topbar :nth-child(21){
+				position: relative;
+				/* color: yellow; */
+				/* background-color: gold; */
+			}
+			.nav-topbar :nth-child(21):hover .appcode{
+				height: 148px;
+				/* display: block; */
+			}
+			.nav-topbar>a,.link{
+				display: inline-block;
+				height: 40px;
+				line-height: 40px;
+				color: #b0b0b0;
+				text-decoration: none;
+			}
+			.nav-topbar>a:hover,.link:hover{
+				color: white;
+			}
+			.gap{
+				margin: 0 3.6px;
+				color: #424242;
+			}
+			.appcode{
+				position: absolute;
+				z-index: 999;
+				color: #000000;
+				width: 124px;
+				height: 0;
+				/* height: 148px; */
+				overflow: hidden;
+				transition-property: height;
+				transition-duration: 1.2s;
+				line-height: 15px;
+				box-sizing: border-box;
+				text-align: center;
+				top: 40px;
+				box-shadow: 0 1px 5px #aaa;
+				transition: height .3s;
+				right: -43px;
+				background-color: white;
+				/* display: none; */
+			}
+			.appcode>img{
+				display: block;
+				margin: 18px 17px 12px 17px;
+			}
+			.shopingcar{
+				margin-left: 15px;
+			}
+			.shopingcar,.shopingcar>a{
+				position: relative;
+				width: 120px;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+				background-color: #424242;
+				color: #b0b0b0;
+				float: right;
+				text-decoration: none;
+			}
+			.shopingcar>a>.shopmess{
+				position: absolute;
+				display: none;
+				z-index: 999;
+				width: 316px;
+				height: 18px;
+				line-height: 18px;
+				color: #424242;
+				right: 0;
+				background-color: white;
+				padding: 41px 0;
+				text-align: center;
+				box-shadow: 0 1px 5px #aaa;
+			}
+			.shopingcar>a:hover{
+				background-color: white;
+				color: #ff6700;
+			}
+			.shopingcar>a:hover .shopmess{
+				display: block;
+			}
+			.login-message{
+				width: 142.47px;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+				float: right;
+				/* background-color: #0077AA */
+			}
+			.sitebar{
+				width: 1349px;
+				height: 100px;
+				/* background-color: #7e7e7e; */
+			}
+			.sitebar>.container{
+				position: relative;
+				height: 100px;
+				/* background-color: #0000FF; */
+			}
+			.head-logo{
+				position: absolute;
+				width: 55px;
+				height: 55px;
+				top: 22px;
+				background-image: url(../img/mi.jpg);
+			}
+			.head-logo>a{
+				display: block;
+				width: 55px;
+				height: 55px;
+			}
+			.head-logo:hover{
+				background-image: url(../img/home.jpg);
+			}
+			.box-seach{
+				position: absolute;
+				top: 24px;
+				right: 0;
+				width: 296px;
+				height: 50px;
+				/* background-color: #55A532; */
+			}
+			@font-face {
+			  font-family: 'iconfont';
+			  src: url('iconfont.eot');
+			  src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+			      url('iconfont.woff2') format('woff2'),
+			      url('iconfont.woff') format('woff'),
+			      url('iconfont.ttf') format('truetype'),
+			      url('iconfont.svg#iconfont') format('svg');
+			}
+			.iconfont {
+			  font-family: "iconfont" !important;
+			  font-size: 16px;
+			  font-style: normal;
+			  -webkit-font-smoothing: antialiased;
+			  -moz-osx-font-smoothing: grayscale;
+			}
+			.search-text,.search-btn{
+				display: block;
+				float: left;
+			}
+			.search-text{
+				width: 225px;
+				height: 46px;
+				padding: 0 10px;
+			}
+			.search-btn{
+				font-size: 26px;
+				font-weight: bold;
+				width: 47px;
+				height: 50px;
+			}
+			.secbar{
+				list-style: none;
+				position: absolute;
+				left: 62px;
+				width: 850px;
+				height: 100px;
+				box-sizing: border-box;
+				padding: 12px 0 0 30px;
+				/* background-color: #4a5a8a; */
+			}
+			.secbar>.space{
+				display: inline-block;
+				float: left;
+				width: 142px;
+				height: 88px;
+				padding-right: 15px;
+				box-sizing: border-box;
+				/* background-color: #000000; */
+			}
+			.secbar>div{
+				float: left;
+				color: #333;
+				text-align: center;
+				box-sizing: border-box;
+				line-height: 24px;
+				font-size: 16px;
+				padding: 26px 10px 38px 10px;
+				/* display: block; */
+				height: 88px;
+			}
+			.sec-chbar{
+				position: absolute;
+				list-style: none;
+				width: 1226px;
+				height: 201px;
+				left: -61px;
+				top: 100px;
+				background-color: #fff;
+				box-shadow: 0 1px 5px #aaa;
+				display: none;
+			}
+			.secbar>div:hover{
+				color: #ff7e00;
+				cursor:pointer;
+			}
+			.secbar>div:hover .sec-chbar{
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="topbar">
+				<div class="container">
+					<div class="nav-topbar">
+						<a rel="nofollow" href="//www.mi.com/index.html">小米商城</a>
+						<span class="gap">|</span>
+						<a rel="nofollow" href="//www.miui.com/" target="_blank">MIUI</a>
+						<span class="gap">|</span>
+						<a rel="nofollow" href="//iot.mi.com" target="_blank">IoT</a>
+						<span class="gap">|</span>
+						<a rel="nofollow" href="//i.mi.com/" target="_blank">云服务</a>
+						<span class="gap">|</span>
+						<a rel="nofollow" href="//airstar.com/home" target="_blank">天星数科</a>
+						<span class="gap">|</span>
+						<a rel="nofollow" href="//youpin.mi.com/" target="_blank">有品</a>
+						<span class="gap">|</span>
+						<a rel="nofollow" href="//xiaoai.mi.com/" target="_blank">小爱开放平台</a>
+						<span class="gap">|</span>
+						<a rel="nofollow" href="//qiye.mi.com/" target="_blank">企业团购</a>
+						<span class="gap">|</span>
+						<a rel="nofollow" href="//www.mi.com/aptitude/list/?id=41" target="_blank">资质证照</a>
+						<span class="gap">|</span>
+						<a rel="nofollow" href="//www.mi.com/aptitude/list/" target="_blank">协议规则</a>
+						<span class="gap">|</span>
+						<a rel="nofollow" href="//www.mi.com/appdownload/" target="_blank" id="J_siteDownloadApp" class="topbar-download">
+						    下载app
+						    <span class="appcode"><img src="//i1.mifile.cn/f/i/17/appdownload/download.png?1" alt="小米商城" width="90" height="90">
+						        小米商城APP
+						    </span></a>
+						<span class="gap">|</span>
+						<a rel="nofollow" href="https://xiaomishare.mi.com/?from=micom" target="_blank">智能生活</a>
+						<span class="gap">|</span>
+						<a rel="nofollow" href="javascript:;" class="J_siteGlobalRegion">Select Location</a>
+					</div>
+					<div class="shopingcar">
+						<a href="">
+							<em class="iconfont icon-gouwuche"></em>
+							<span>购物车</span>
+							<span>（0）</span>
+							<div class="shopmess">
+								购物车中还没有商品，赶紧选购吧！
+							</div>
+						</a>
+					</div>
+					<div class="login-message">
+						<a class="link" href="//order.mi.com/site/login?redirectUrl=https://www.mi.com/">登录</a>
+						<span class="gap">|</span>
+						<a class="link" href="//account.xiaomi.com/pass/register">注册</a>
+						<span class="gap">|</span>
+						<a class="link" href="//www.mi.com/user/message">消息通知</a>
+					</div>
+				</div>
+			</div>
+			<div class="sitebar">
+				<div class="container">
+					<div class="head-logo">
+						<a href="//www.mi.com/index.html" title="小米官网" ></a>
+					</div>
+					<div class="box-seach">
+						<form action="//search.mi.com/search" method="get" class="search-form">
+							<input type="text"  class="search-text" placeholder="手机" />
+							<input type="submit" value="&#xe602;" class="search-btn iconfont">
+						</form>
+					</div>
+					<div class="secbar">
+						<span class="space"></span>
+						<div>小米手机
+							<ul class="sec-chbar">
+								<li></li>
+							</ul>
+						</div>
+						<div>Redmi 红米</div>
+						<div>电视</div>
+						<div>笔记本</div>
+						<div>家电</div>
+						<div>路由器</div>
+						<div>智能硬件</div>
+						<div>服务</div>
+						<div>社区</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+		
+	</body>
+</html>

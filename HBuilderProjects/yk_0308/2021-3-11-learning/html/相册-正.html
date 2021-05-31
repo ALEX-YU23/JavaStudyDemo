@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>相册正</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#photo{
+				width: 1226px;
+				/* height: 600px; */
+				margin: 0 auto;
+				background-color: #999988;
+			}
+			.content{
+				list-style: none;
+				width: 1228px;
+				height: 1080px;
+				/* padding: 20px; */
+			}
+			.content>li{
+				overflow: hidden;
+				width: 390px;
+				height: 248px;
+				border: 2px solid wheat;
+				border-radius: 3px;
+				box-sizing: border-box;
+				float: left;
+				margin-top: 14px;
+				margin-left: 14px ;
+			}
+			.content>li>img{
+				transition: transform 1.2s;
+				width: 386px;
+				height: 244px;
+			}
+			.content>li:hover img{
+				transform: scale(2);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="photo">
+			<ul class="content">
+				<li>
+					<img src="../img/ia_100000005.jpg" alt="">
+				</li>
+				<li>
+					<img src="../img/ia_100000006.jpg" alt="">
+				</li>
+				<li>
+					<img src="../img/ia_100000007.jpg" alt="">
+				</li>
+				<li>
+					<img src="../img/ia_100000008.jpg" alt="">
+				</li>
+				<li>
+					<img src="../img/ia_100000009.jpg" alt="">
+				</li>
+				<li>
+					<img src="../img/ia_100000010.jpg" alt="">
+				</li>
+				<li>
+					<img src="../img/ia_100000011.jpg" alt="">
+				</li>
+				<li>
+					<img src="../img/ia_100000012.jpg" alt="">
+				</li>
+				<li>
+					<img src="../img/ia_100000013.jpg" alt="">
+				</li>
+				<li>
+					<img src="../img/ia_100000014.jpg" alt="">
+				</li>
+				<li>
+					<img src="../img/ia_100000015.jpg" alt="">
+				</li>
+				<li>
+					<img src="../img/ia_100000016.jpg" alt="">
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

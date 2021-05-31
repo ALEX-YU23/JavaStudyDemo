@@ -1,0 +1,19 @@
+.nav-left-big:hover{
+				position: relative;
+				top: 1px;
+				box-shadow: 0 1px 5px #aaa;
+				
+			}
+
+.nav-container li:hover {
+	position: relative;
+	top: 1px;
+	box-shadow: 0 1px 6px #aaa;
+
+}
+.site-foot>.foot-service>li>a:hover {
+	color: #ff6709;
+}
+.sever-link>dl>dd>a:hover{
+	color: #ff6709;
+}

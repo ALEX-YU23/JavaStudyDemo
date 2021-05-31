@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>css选择器</title>
+		<style type="text/css">
+			/* p{
+				color: red;
+			} */
+			#p2{
+				color: blue;
+			}
+			.p1{
+				color: yellowgreen;
+			}
+			/* 群组选择器 */
+			.p1,#p2,#phover{
+				font-size: 35px;
+			}
+			/* 属性选择器 */
+			img[title=pic1]{
+				border: 2px solid #0000FF;
+			}
+			/* 子代选择器 */
+			/* ul>li>p{
+				color: skyblue;
+			} */
+			/* 后代选择器 */
+			ul p{
+				color: gold;
+			}
+			
+			/* 伪类 */
+			#phover:hover{
+				color: indianred;
+			}
+			
+			#ihover:hover{
+				border: 3px solid saddlebrown;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<!-- css选择器分类
+		1.标签选择器  纯
+		2.ID选择器   id必须唯一 #
+		3.类选择器   .  class属性可以叠加   例如：class= "p1 p2 p3"
+		4.通配符     *
+		5.群组选择器  可以类，标签一起选择，以英文逗号分割  例如：#p1,.p2
+		6.属性选择器  以属性名作为索引，例如: img[title=“pic1”]
+		7.后代选择器  例如 ul li   以空格表示后代
+		8.子代选择器  例如 ul>li   以>表示子代
+		9.伪类 		 :hover active linked
+		10.伪元素     :after  :before
+		11.兄弟选择器  + 选择下方的    -->   
+		
+		<p class="p1">选择器选择器选择器选择器选择器选择器选择器</p>
+		<p id="p2">选择器选择器选择器选择器选择器选择器选择器</p>
+		<p class="p1">选择器选择器选择器选择器选择器选择器选择器</p>
+		<p class="p1">选择器选择器选择器选择器选择器选择器选择器</p>
+		<p class="p1">选择器选择器选择器选择器选择器选择器选择器</p>
+		<p>选择器选择器选择器选择器选择器选择器选择器</p>
+		
+		
+		<img src="../img/01.jpg" title="pic1">
+		<img src="../img/03.jpg" title="pic2" id="ihover">
+		
+		<hr>
+		<ul>
+			<li>
+				<p>li-p</p>
+			</li>
+			<li>2</li>
+			<li>3</li>
+			<p>ul-p</p>
+		</ul>
+		
+		<p id="phover">选择器选择器选择器选择器选择器选择器选择器</p>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</body>
+</html>

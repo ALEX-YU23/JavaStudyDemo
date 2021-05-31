@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>求解一元二次方程</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var a = prompt('请输入a:')-0;
+			var b = prompt('请输入b:')-0;
+			var c = prompt('请输入c:')-0;
+			var judge = Math.sqrt(b**2-4*a*c);
+			console.log(a+'x2+'+b+'x+'+c);
+			if(judge>0){
+				var d1=judge,d2=-1*judge,x1,x2;
+				x1=(-b+d1)/2*a;
+				x2=(-b+d2)/2*a;
+				console.log('此时方程有两个根：x1='+x1+';'+'x2='+x2);
+			}else if(judge==0){
+				var d=judge,x;
+				x=(-b+d)/2*a;
+				console.log('此时方程有两个相同的根：x='+x);
+			}else{
+				console.log('此时方程无解');
+			}
+		</script>
+	</body>
+</html>

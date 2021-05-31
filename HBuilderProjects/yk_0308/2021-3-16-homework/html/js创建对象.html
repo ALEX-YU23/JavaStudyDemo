@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JS创建对象</title>
+	</head>
+	<body>
+		<h1>Javascript 创建对象</h1>
+		<p id="demo">
+			
+		</p>
+		<script type="text/javascript">
+			// 创建对象
+			var person = {
+				firstName   :   'Bill',
+				lastNmae    :   'Gates',
+				age         :    62,
+				eyeColor    :    'blue',
+				introduce   : function(){
+					return this.firstName + 
+					'已经' + this.age + '岁了。';
+				}
+				
+			};
+			// document.getElementById('demo').innerHTML = 
+			// '加括号输出函数表达式：' + person.introduce();
+			// document.getElementById('demo').innerHTML = 
+			// '不加括号输出函数执行结果：' + person.introduce;
+			// 显示对象中的数据:
+			
+			/*
+			document.getElementById('demo').innerHTML = 
+			person.firstName + '已经' + person["age"] + 
+			'岁了。';
+			*/
+			
+			
+			
+		</script>
+	</body>
+</html>

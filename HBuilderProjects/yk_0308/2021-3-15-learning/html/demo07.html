@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>数据类型</title>
+	</head>
+	<body>
+		<!-- 什么是数据类型
+			数据所属的种类
+			var age = 12；  
+			var name = '张三' 
+			
+			简单类型 复杂类型
+			
+			字符串类型    string      'b'
+			数值类型		 number      1 2  3
+			布尔类型      boolean     true  false
+			空值			  null        null
+			定义未赋值     undefined    undefined
+			对象			  object      数组   person
+		 -->
+		<script type="text/javascript">
+			//定义一个字符串类型的数据  使用引号引起来 单引号 双引号都行
+			var name = 'zhangsan';
+			//通过 typeof运算符 验证当前变量的数据类型
+			console.log(typeof name); //string
+			/*
+			  js中变量的类型是动态的   变量是没有数据类型的  
+			  变量的数据类型取决于里面存放的数据
+			
+			*/
+			var age;
+			console.log(typeof age);//undefined
+			age = 20;
+			console.log(typeof age); //number
+			age = '20';
+			console.log(typeof age); //string
+			
+			// var b = true;
+			var b = false;
+			console.log(typeof b); //boolean
+			
+			var u = undefined;
+			console.log(typeof u); //undefined
+			
+			var n = null;
+			console.log(typeof n);//object  person = null
+		
+			
+			
+		</script>
+	</body>
+</html>

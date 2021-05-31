@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>浮动作业</title>
+		<style type="text/css">
+			#box{
+				width: 1240px;
+				height: 170px;
+				border: 1px solid #00008B;
+				margin: 0 auto;
+				position: relative;
+			}
+			#box-1,#box-2,#box-3,#box-4{
+				float: left;
+				width: 298.75px;
+				height: 170px;
+				margin-right: 15px;
+			}
+			#box-1{
+				background-color: red;
+			}
+			#box-1:hover{
+				background-color: #F4A460
+			}
+			#box-2{
+				background-color: hotpink;
+			}
+			#box-3{
+				background-color: blue;
+			}
+			#box-4{
+				background-color: gold;
+				margin-right: 0px;
+			}
+			.dhover div{
+				display: none;
+			}
+			.dhover:hover div{
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div id="box">
+			<div id="box-1" class="dhover">
+				<div>你好牛逼！</div>
+				
+			</div>
+			<div id="box-2" class="dhover">
+				<div>爷爷在此！</div>
+			</div>
+			<div id="box-3" class="dhover">
+				<div>你不是垃圾！</div>
+			</div>
+			<div id="box-4" class="dhover">
+				<div>骗你的！</div>
+			</div>
+		</div>
+		
+		
+		
+	</body>
+</html>

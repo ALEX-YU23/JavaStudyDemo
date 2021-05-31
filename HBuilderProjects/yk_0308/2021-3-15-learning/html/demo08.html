@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>数据类型的转换</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			// var age = prompt('请输入您的年龄');
+			// console.log(typeof age);
+			// console.log(age+10);
+			/*
+				字符类型转换成数值类型
+				1.	parseInt(变量名);  转换时 会从前往后一次转换 直到遇到不是数字的字符结束
+				2.	parseFloat(变量名)     浮点数  将字符型数据转换成浮点型
+				3.  Number(变量名)
+				4.  - * / 隐式转化
+			
+			*/
+		   
+		 //    age = parseInt(age);
+			// console.log(typeof age);
+			// console.log(age+10);
+			
+			//NaN    not a number
+			//parseInt('二十');
+			
+		   // var width = '120px';
+		   // width = parseInt(width);
+		   // console.log(width);
+		   var price = prompt('请输入价格');
+		   // price = parseFloat(price);
+		   // price = Number(price);
+		   price  = price * 1;
+		   console.log(typeof price);
+		   console.log(price);
+			
+		</script>
+	</body>
+</html>

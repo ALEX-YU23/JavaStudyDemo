@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>js的使用方式</title>
+		<!-- 内嵌js -->
+		<script type="text/javascript" >
+			// 浏览器打开 弹窗
+			//js单行注释
+			/*
+				多行注释
+				多行注释
+				多行注释
+			
+			*/
+		   
+			// alert('hello javascript');
+			
+			
+		</script>
+		<!-- 引入外链样式 
+		src  js文件的位置 注意路径的书写
+		
+		-->
+		<script type="text/javascript" src="../js/myjs.js"></script>
+	</head>
+	<body>
+		
+		<!-- 行内式
+		 a  超链接   href  跳转的目标地址
+		 -->
+		<a href="http://www.baidu.com">百度</a>
+		<!-- 警告窗 
+		  alert();  括号内部写 提示的内容 提示信息需要使用引号
+		-->
+		<a href="javascript:alert('hello javascript-a');">点一下</a>
+		
+		<!-- 按钮 
+		 表单控件   input type="submit"  reset  button  
+		 form  
+		 onclick     鼠标单击
+		 ondblclick  鼠标双击
+		 -->
+		<button type="button" onclick="javascript:alert('hello javascript-button');">点一下</button>
+		
+	</body>
+</html>
