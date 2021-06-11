@@ -32,15 +32,18 @@ public class IntelNetDemo {
 
 	public static void main(String[] args) {
 		try {
+			// 从ip地址获取网络地址
 			InetAddress ip = InetAddress.getByName("192.168.4.247");
 			System.out.println(ip);
 			
+			// 从域名获取网络地址
 			InetAddress ip2 = InetAddress.getByName("www.baidu.com");
 			System.out.println(ip2);
 			
 			InetAddress ip3 = InetAddress.getByName("localhost");
 			System.out.println(ip3);
 			
+			// 获得本地网络
 			InetAddress localHost = InetAddress.getLocalHost();
 			System.out.println(localHost);
 			

@@ -1,2 +1,0 @@
-User(username=余超平, password=131455)
-User(username=但孝玉, password=131455)

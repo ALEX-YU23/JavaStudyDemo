@@ -5,6 +5,7 @@ import java.io.Serializable;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 /**
  * 
@@ -19,14 +20,16 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class User implements Serializable{
 
+	
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = -4939519881594346353L;
-	
+	private static final long serialVersionUID = 435835482659262780L;
+
+
 	private String username;
 	private String password;
-
+	
 	
 	
 	

@@ -11,7 +11,7 @@ public class PassWordNotFormatException extends Exception {
 	private static final long serialVersionUID = -4774765837717449238L;
 
 	public PassWordNotFormatException(String password) {
-		super("密码由六位数字或字母组成:"+password);
+		super("密码由六位数字或字母组成:"+password+"\n");
 	}
 
 	

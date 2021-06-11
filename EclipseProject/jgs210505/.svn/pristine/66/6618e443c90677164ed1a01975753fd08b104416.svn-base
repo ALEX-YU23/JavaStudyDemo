@@ -1,0 +1,43 @@
+package org.jgs.net.day01;
+
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+/**
+ * ServerSocket  服务端的套接字  
+ * 
+ * @author mosin
+ * @DATE 2021年6月1日
+ */
+public class Server {
+	private  ServerSocket serverSocket;
+	//初始化服务器
+	public Server() {
+		try {
+			System.out.println("初始化服务器....");
+			serverSocket = new ServerSocket(8888);
+			System.out.println("服务器启动成功！");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	//服务器具体执行的操作
+	public void start() {
+		System.out.println("等待客户端的连接....");
+		//开始监听8888端口  进入阻塞状态
+		try {
+			Socket socket = serverSocket.accept();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		System.out.println("一个客户已连接....");
+		
+	}
+	//启动服务器
+	public static void main(String[] args) {
+		Server server = new Server();
+		server.start();
+	}
+	
+}

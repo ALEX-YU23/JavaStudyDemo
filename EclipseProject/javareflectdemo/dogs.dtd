@@ -1,0 +1,7 @@
+<!ELEMENT dogs (dog+)>
+<!ELEMENT dog (name , sex, health, love,strain)>
+<!ELEMENT name   (#PCDATA)>
+<!ELEMENT sex    (#PCDATA)>
+<!ELEMENT health (#PCDATA)>
+<!ELEMENT love   (#PCDATA)>
+<!ELEMENT strain (#PCDATA)>

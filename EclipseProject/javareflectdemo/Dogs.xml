@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><!--文档类型的声明-->
+<!--<!DOCTYPE dogs SYSTEM "dogs.dtd">格式约束-->
+
+<dogs> <!-- 根标签 -->
+	<dog id = "1001">
+		<name>小花</name>
+		<sex>雄</sex>
+		<health>67</health>
+		<love>67</love>
+		<strain>打猎</strain>
+	</dog>
+	<dog id = "1002">
+		<name>小花1</name>
+		<sex>雄</sex>
+		<health>67</health>
+		<love>67</love>
+		<strain>打猎</strain>
+	</dog>
+	<dog id = "1003">
+		<name>小花2</name>
+		<sex>雄</sex>
+		<health>67</health>
+		<love>67</love>
+		<strain>打猎</strain>
+	</dog>
+	<dog id = "1004">
+		<name>小花3</name>
+		<sex>雄</sex>
+		<health>67</health>
+		<love>67</love>
+		<strain>打猎</strain>
+	</dog>
+
+
+</dogs>

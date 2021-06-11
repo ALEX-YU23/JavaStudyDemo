@@ -1,0 +1,6 @@
+package org.jgs.reflect.dayo1;
+
+public interface MyInterface {
+
+	void myInterfaceMethod();
+}

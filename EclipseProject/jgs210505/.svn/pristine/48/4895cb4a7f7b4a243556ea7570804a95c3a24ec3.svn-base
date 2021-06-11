@@ -1,0 +1,143 @@
+package org.jgs.reflect.dayo1;
+
+import java.lang.reflect.Constructor;
+
+import org.junit.Test;
+
+/**
+ * 测试反射的相关操作
+ * 1.获取反射的入口  类对象
+ * 	Class.forName(全类名)  包名+类名
+ * 	类名.class
+ * 	对象.getClass()s
+ * 
+ * @author mosin
+ * @DATE 2021年6月2日
+ */
+@SuppressWarnings("all")
+public class ReflectRTest {
+	
+	@Test
+	public void test01() { //获取反射的 入口
+		
+	
+		try {
+			/**
+			 * Class.forName(全类名)  包名+类名
+			 */
+			Class clazz = Class.forName("org.jgs.reflect.dayo1.Student");
+			System.out.println(clazz);
+			
+			/**
+			 * 类名.class
+			 */
+			Class clazz2 = Student.class;
+			System.out.println(clazz2);
+			
+			/**
+			 * 对象名.getClass()
+			 */
+			Student student = new Student();
+			Class clazz3 = student.getClass();
+			System.out.println(clazz3);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+	
+	@Test
+	public void test02() { //获取类对象所在的包名和类名
+		try {
+			Class clazz = Class.forName("org.jgs.reflect.dayo1.Student");
+			//通过类对象获取包名
+			Package package1 = clazz.getPackage();
+			System.out.println(package1);
+			//获取类名
+			String simpleName = clazz.getSimpleName();
+			System.out.println(simpleName);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+	@Test
+	public void test03() { //获取类对象的父类和实现的接口
+		
+		try {
+			Class clazz = Class.forName("org.jgs.reflect.dayo1.Student");
+			//获取父类
+			Class superclass = clazz.getSuperclass();
+			System.out.println(superclass);
+		    //获取父接口
+			Class[] interfaces = clazz.getInterfaces();
+			//遍历数组  查看实现的所有接口
+			for (Class interf : interfaces) {
+				System.out.println(interf.getName());
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+	@Test
+	public void test04() { //获取类对象的构造方法
+		try {
+			Class clazz = Class.forName("org.jgs.reflect.dayo1.Student");
+			//获取本类中公开构造方法
+			Constructor[] constructors = clazz.getConstructors();
+			//遍历数组 查看获取的额构造方法
+			for (Constructor constructor : constructors) {
+				System.out.println(constructor);
+			}
+			
+			System.out.println("*****************************");
+		   //获取本类中所有构造方法  getDeclaredConstructors()  忽略了修饰符的限制
+			Constructor[] declaredConstructors = clazz.getDeclaredConstructors();
+			for (Constructor constructor : declaredConstructors) {
+				System.out.println(constructor);
+			}
+			System.out.println("*****************************");
+			//获取指定参数的某个构造方法
+			Constructor constructor = clazz.getConstructor(String.class);
+			System.out.println(constructor);
+			
+			//获取指定参数的某个私有构造方法
+			Constructor declaredConstructor = clazz.getDeclaredConstructor(double.class);
+			System.out.println(declaredConstructor);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
+
+	@Test
+	public void test05() { //获取类对象的构造方法  如何创建对象
+		
+		try {
+			Class clazz = Class.forName("org.jgs.reflect.dayo1.Student");
+			
+			//通过类对象获取无参构造
+			Constructor constructor = clazz.getConstructor();
+			System.out.println(constructor);
+			//通过获取的方法创建实例对象  newInstance()
+			Object obj = constructor.newInstance();
+			System.out.println(obj);
+			
+			System.out.println("********************************");
+			Constructor constructor2 = clazz.getConstructor(String.class);
+			Object obj2 = constructor2.newInstance("10001");
+			System.out.println(obj2);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+}

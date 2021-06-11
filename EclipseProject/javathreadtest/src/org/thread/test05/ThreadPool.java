@@ -1,0 +1,82 @@
+package org.thread.test05;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+/**
+ * 
+* 创建线程的方式四：使用线程池
+ *
+ * 好处：
+ * 1.提高响应速度（减少了创建新线程的时间）
+ * 2.降低资源消耗（重复利用线程池中线程，不需要每次都创建）
+ * 3.便于线程管理
+ *      corePoolSize：核心池的大小
+ *      maximumPoolSize：最大线程数
+ *      keepAliveTime：线程没有任务时最多保持多长时间后会终止
+ *
+ *
+ * 面试题：创建多线程有几种方式？四种！
+ * @author AlexYU
+ * @date 2021年6月6日下午4:34:10
+ */
+
+class Number implements Runnable{
+
+	@Override
+	public void run() {
+		for (int i = 1; i < 101; i++) {
+			if (i%2==0) {
+				
+				System.out.println(Thread.currentThread().getName() + ":" + i);
+			}
+		}
+		
+	}
+	
+}
+
+class Number1 implements Runnable{
+
+	@Override
+	public void run() {
+		for (int i = 1; i < 101; i++) {
+			if (i%2!=0) {
+				
+				System.out.println(Thread.currentThread().getName() + ":" + i);
+			}
+		}
+		
+	}
+	
+}
+public class ThreadPool {
+
+	public static void main(String[] args) {
+		//1.提供指定线程数的线程池
+		ExecutorService newFixedThreadPool = Executors.newFixedThreadPool(10);
+		//2.执行指定的线程的操作。需要提供实现Runnable 接口或Callable接口实现类的对象
+		newFixedThreadPool.execute(new Number()); // 适用于Runnable
+		newFixedThreadPool.execute(new Number1()); // 适用于Runnable
+		
+		newFixedThreadPool.shutdown(); //关闭连接池
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

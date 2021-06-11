@@ -1,0 +1,53 @@
+package org.jgs.net.day01;
+/**
+ * Socket 套接字  基于TCP协议的数据传输  
+ * 类中封装了一些关于tcp数据传输的细节
+ * 
+ * 基于字节流进行数据传输的
+ * 
+ * @author mosin
+ * @DATE 2021年6月1日
+ */
+
+import java.io.IOException;
+import java.net.Socket;
+
+public class Client {
+	
+	private  Socket  socket;
+	
+	/*初始化客户端
+	 * Socket(String host, int port) 创建流套接字并将其连接到指定主机上的指定端口号			
+	 * host：发送数据的目标地址 也就是IP
+	 * port：目标地址的 端口号 用于找打对应的应用程序
+	 * */ 
+	
+	public Client() {
+		try {
+			System.out.println("正在启动服务端....");
+			socket = new Socket("localhost",8888);
+			System.out.println("服务端启动成功！");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	//客户端需要做的任务
+	
+	public void start() {
+		
+		
+		
+		
+	}
+	
+	
+	//启动客户端
+	public static void main(String[] args) {
+		Client client = new  Client();
+		client.start();
+	}
+	
+	
+
+}

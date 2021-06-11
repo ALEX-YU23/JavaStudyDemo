@@ -1,0 +1,2 @@
+class=org.reflect.exer.Dog
+method=sayName
