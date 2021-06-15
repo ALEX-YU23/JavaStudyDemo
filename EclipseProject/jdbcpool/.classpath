@@ -10,5 +10,7 @@
 	<classpathentry kind="lib" path="lib/c3p0-0.9.5.5.jar"/>
 	<classpathentry kind="lib" path="lib/druid-1.2.6.jar" sourcepath="D:/TempDir/JAR/druid-1.2.6-sources.jar"/>
 	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.47.jar"/>
+	<classpathentry kind="lib" path="lib/mchange-commons-java-0.2.20.jar"/>
+	<classpathentry kind="lib" path="lib/commons-dbutils-1.7.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

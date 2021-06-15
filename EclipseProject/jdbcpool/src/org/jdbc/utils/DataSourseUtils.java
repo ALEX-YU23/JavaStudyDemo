@@ -37,7 +37,7 @@ public final class DataSourseUtils {
 	/**
 	 * 获取数据库连接池
 	 */
-	public static DataSource getDataSource() throws SQLException {
+	public static DataSource getDataSource(){
 		return ds;
 	}
 	
