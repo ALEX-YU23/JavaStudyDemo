@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>css选择器的使用</title>
+		<style type="text/css">
+			
+			/* 没有被访问的连接 */
+			a:link{
+				color: #000000;
+			}
+			a:visited{
+				color: #aa3d0a;
+			}
+			#p1:hover a{
+				font-size: 20px;
+				color: red;
+				text-decoration: none;
+			}
+			a:active{
+				color: blueviolet;
+			}
+			p::first-letter{
+				font-size: 23px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 
+		 选择器的分类
+		 1.元素选择器
+		 2.id选择器
+		 3.class
+		 4.群组
+		 5.后代
+		 6.子代
+		 7.属性
+		 8.伪类
+		 :hover 鼠标滑过添加样式
+		 :link 没有被访问过的连接
+		 :active 被选中状态添加的样式
+		 :visited 已经被访问过的连接
+		 
+		 9.伪元素
+		 10.兄弟
+		 
+		 选择器的使用根据实际情况选择
+		 -->
+
+		<center>
+			<h1>你好</h1>
+			
+			<p id="p1">
+				<a href="http://www.oppo.com" target="_blank">百度</a>
+			</p>
+			
+			<p>JavaScript 的语法很类似 C/C++ 和 <span>Java</span>，如果学过这些语言（事实上大多数学校都教），JavaScript 的入门会非常容易。</p>
+			
+			
+		</center>
+
+	</body>
+</html>

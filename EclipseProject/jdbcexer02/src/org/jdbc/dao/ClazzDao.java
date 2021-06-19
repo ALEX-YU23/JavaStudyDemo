@@ -39,7 +39,6 @@ public class ClazzDao extends Dao<Clazz>{
 		}
 		return i;
 	}
-
 	@Override
 	public Integer updateObject(String newItem,String...target) {
 		// 编写并执行sql
