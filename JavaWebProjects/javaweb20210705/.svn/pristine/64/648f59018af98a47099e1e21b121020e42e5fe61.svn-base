@@ -1,0 +1,11 @@
+/**
+ * 登录界面js文件
+ */
+
+$(function(){
+	
+	$(':button').click(function(){
+		$('#login').fadeOut();
+		$('#register').fadeIn();
+	})
+})

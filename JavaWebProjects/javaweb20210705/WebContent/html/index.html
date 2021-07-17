@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" href="../css/login.css">
+<script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="../js/login.js"></script>
+</head>
+<body>
+
+<div id="login">
+	<form action="login.do?method=login" method="post" >
+		<p><input type="text" name="username" placeholder="请输入用户名" required></p>
+		<p><input type="password" name="password" placeholder="请输入密码" required></p>
+		<p>记住我 <input type="checkbox" name="remember-me"></p>
+		<p><input type="submit" value = "登录"></p>
+		<p><input type="button" value = "注册账号" ></p>
+	</form>
+</div>
+	
+<div id="register">
+	<form action="/javaweb20210705/registerServlet" method="post" >
+		<p>
+		    <input type="text" name="username" placeholder="请输入用户名" id="usercode" required>
+		    <span class="msg-account"></span>
+		</p>
+		<p>
+			<input type="password" name="password" placeholder="请输入密码" id ="pwd" required>
+			<span class="msg-password">6-12位数字字母的组合</span>
+		</p>
+		<p>
+		    <input type="text" name="nickname" placeholder="请输入昵称" required>
+		    <span class="msg-nickname"></span>
+		</p>
+		<p><input type="submit" value = "注册" id="register-btn"></p>
+	</form>
+</div>	
+</body>
+</html>

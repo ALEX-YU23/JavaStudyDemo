@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>testjavaweb04</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  	<servlet>
+  		<servlet-name>ShowServlet</servlet-name>
+  		<servlet-class>org.javaweb.servlet.ShowServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>ShowServlet</servlet-name>
+  		<url-pattern>/servlet/show</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet-mapping>
+  		<servlet-name>ShowServlet</servlet-name>
+  		<url-pattern>/show</url-pattern>
+  	</servlet-mapping>
+  
+  	<filter>
+  		<filter-name>CharacterEncodingFilter</filter-name>
+  		<filter-class>org.javaweb.filter.CharacterEncodingFilter</filter-class>
+  	</filter>
+  	<filter-mapping>
+  		<filter-name>CharacterEncodingFilter</filter-name>
+  		<!-- 只要是servlet下的请求都要过滤 -->
+  		<url-pattern>/*</url-pattern>
+  	</filter-mapping>
+  	
+  	<filter>
+  		<filter-name>isLoginFilter</filter-name>
+  		<filter-class>org.javaweb.filter.IsLoginFilter</filter-class>
+  	</filter>
+  	<filter-mapping>
+  		<filter-name>isLoginFilter</filter-name>
+  		<!-- 只要是protect下的请求都要过滤 -->
+  		<url-pattern>/protect/*</url-pattern>
+  	</filter-mapping>
+  	
+  	
+  	<listener>
+  		<listener-class>org.javaweb.listener.BasePathListener</listener-class>
+  	</listener>
+</web-app>

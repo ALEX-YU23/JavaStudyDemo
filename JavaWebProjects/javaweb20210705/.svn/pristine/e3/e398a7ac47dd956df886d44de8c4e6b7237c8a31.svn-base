@@ -1,0 +1,17 @@
+package cn.kgc.javaweb.test;
+
+import java.sql.Connection;
+
+import org.junit.Test;
+
+import cn.kgc.javaweb.util.DruidDataSourceUtil;
+
+public class UserTest {
+	@Test
+	public void testDataSource() {
+		
+		Connection connection = DruidDataSourceUtil.getConnection();
+		System.out.println(connection);
+		
+	}
+}

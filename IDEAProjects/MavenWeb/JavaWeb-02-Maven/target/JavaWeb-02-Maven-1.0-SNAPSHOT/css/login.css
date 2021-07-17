@@ -1,0 +1,33 @@
+.login {
+				/* border: 1px solid black; */
+				height: 500px;
+				width: 600px;
+				margin-top: 90px;
+			}
+
+
+			.layui-tab-content{
+				padding-top: 50px;
+			}
+			.layui-tab-title {
+				text-align: center;
+			}
+
+			.layui-tab-title li {
+				font-size: 22px;
+				line-height: 55px;
+			}
+
+			.layui-tab-title {
+				height: 55px;
+			}
+
+			.layui-input {
+				height: 50px;
+				font-size: 18px;
+			}
+
+			.layui-input-block {
+				margin-left: 0;
+				
+			}

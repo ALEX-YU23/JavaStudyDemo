@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生信息查询</title>
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <script type="text/javascript" src="layui/layui.js"></script>
+</head>
+<body>
+
+<table id="student"></table>
+<script>
+    layui.use('table', function(){
+        const table = layui.table;
+        table.render({
+            elem: '#student'
+            ,url:'/layuiPage/findAllStudent'
+            ,cols: [[
+                {field:'id',  title: 'ID'}
+                ,{field:'stuName',  title: '姓名'}
+                ,{field:'sex', title: '性别'}
+                ,{field:'stuAge', title: '年龄'}
+                ,{field:'classNo', title: '班级', minWidth: 150}
+                ,{field:'tel', title: '联系方式'}
+            ]]
+            ,page: true
+        });
+    });
+</script>
+
+
+</body>
+</html>

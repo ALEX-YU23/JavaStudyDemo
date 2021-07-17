@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>第一个javaweb页面</title>
+</head>
+<body>
+
+  <h1>Hello Tomcat</h1>
+  <a href="dateServlet">查询当前系统时间</a>
+  
+  <form action="loginServlet" method ="post">
+   用户名：<input type="text" name="username"><br>
+   密码：<input type="password" name="password"><br>
+   <input type="submit">
+  </form>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>testjavaweb02</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- 配置servlet请求的路径 -->
+  <servlet>
+  	<!-- Servlet设置别名 -->
+  	<servlet-name>dateServlet</servlet-name>
+  	<!-- 当前请求类的全路径  包名.类名-->
+  	<servlet-class>org.jgs.javaweb.servlet.DateServlet</servlet-class>
+  </servlet>
+  
+  <!-- 配置请求的映射 -->
+  <servlet-mapping>
+  	<!-- 对应上面的别名 -->
+  	<servlet-name>dateServlet</servlet-name>
+  	<!-- 对应前端页面的href的地址 -->
+  	<url-pattern>/dateServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- 配置servlet请求的路径 -->
+  <servlet>
+  	<!-- Servlet设置别名 -->
+  	<servlet-name>LoginServlet</servlet-name>
+  	<!-- 当前请求类的全路径  包名.类名-->
+  	<servlet-class>org.jgs.javaweb.servlet.LoginServlet</servlet-class>
+  </servlet>
+  
+  <!-- 配置请求的映射 -->
+  <servlet-mapping>
+  	<!-- 对应上面的别名 -->
+  	<servlet-name>LoginServlet</servlet-name>
+  	<!-- 对应前端页面的href的地址 -->
+  	<url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- 配置servlet请求的路径 -->
+  <servlet>
+  	<!-- Servlet设置别名 -->
+  	<servlet-name>CalBMIServlet</servlet-name>
+  	<!-- 当前请求类的全路径  包名.类名-->
+  	<servlet-class>org.jgs.javaweb.servlet.CalBMIServlet</servlet-class>
+  </servlet>
+  
+  <!-- 配置请求的映射 -->
+  <servlet-mapping>
+  	<!-- 对应上面的别名 -->
+  	<servlet-name>CalBMIServlet</servlet-name>
+  	<!-- 对应前端页面的href的地址 -->
+  	<url-pattern>/calBMIServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+</web-app>

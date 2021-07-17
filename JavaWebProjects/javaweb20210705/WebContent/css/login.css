@@ -1,0 +1,30 @@
+
+*{
+	margin:0;
+	padding:0;
+}
+
+
+#login,#register{
+	position: absolute;
+	top:35%;
+	left:35%;
+}
+
+#register{
+	display:none;
+}
+
+input{
+	width:400px;
+	height:35px;
+	margin-bottom:10px;
+	border:none;
+	outline:none;
+	border-bottom:1px dotted gray;
+}
+
+input[type="checkbox"]{
+	width:15px;
+	height:15px;
+}

@@ -130,6 +130,7 @@ public class JdbcTest1 {
 			// 设置B减100
 			ps.setDouble(1, -100);
 			ps.setString(2, "B");
+//			ps.setString(0, sql);
 			// 执行
 			ps.executeUpdate();
 			

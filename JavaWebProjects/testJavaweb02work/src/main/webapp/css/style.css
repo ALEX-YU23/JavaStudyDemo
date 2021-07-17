@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+form {
+	padding: 20px 50px 0 50px;
+	width: 360px;
+	margin: 90px auto;
+	border: 1px solid black;
+	box-sizing: border-box;
+}
+
+#regist {
+	display: none;
+}
+
+input {
+	width: 100%;
+	height: 55px;
+	margin-top: 30px;
+}
+
+a {
+	display: block;
+	margin-top: 20px;
+	text-align: end;
+	text-decoration: none;
+}
